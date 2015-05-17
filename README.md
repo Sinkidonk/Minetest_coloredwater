@@ -9,10 +9,9 @@ Please note that the colors.txt file, and the gentextures.sh file are not my the
 TO DO <br>
 1. Done - add the WTFPL – Do What the Fuck You Want to Public License. <br>
 2. Done - remove over 600+ textures, and start useing the Texture modifiers (Thank Hybrid Dog for pointing that out.) <br>
-2. Done for now - add more color. <br>
-4. make colored water biome.<br>
-3. ??? <br>0
-4. profit 
+3. Done for now - add more color. <br>
+4. ??? <br>
+5. profit 
 
 <h3>Thing to add in the near future</h3>
 1. colored water biome ( was going to add it sooner but found out that Mapgen v6 don't allow new biome, only redefind existence biome in the world. So I will wait until Mapgen v7 is finish, to add in biome. Unless someone else what to add it in before then I will be more then willing to add it to the main mod.
