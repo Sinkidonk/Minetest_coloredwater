@@ -1,11 +1,11 @@
 -- water
 minetest.register_node("coloredwater:water_source_cyan", {
 	description = "Cyan Water Source",
-	inventory_image = minetest.inventorycube("coloredwater_water_cyan.png"),
+	inventory_image = minetest.inventorycube("coloredwater_water_base.png^[colorize:#01fffccc:50]"),
 	drawtype = "liquid",
 	tiles = {
 		{
-			name = "coloredwater_water_source_animated_cyan.png",
+			name = "coloredwater_water_source_animated_base.png^[colorize:#01fffccc:50]",
 			animation = {
 				type = "vertical_frames",
 				aspect_w = 16,
@@ -17,7 +17,7 @@ minetest.register_node("coloredwater:water_source_cyan", {
 	special_tiles = {
 		-- New-style water source material (mostly unused)
 		{
-			name = "coloredwater_water_source_animated_cyan.png",
+			name = "coloredwater_water_source_animated_base.png^[colorize:#01fffccc:50]",
 			animation = {
 				type = "vertical_frames",
 				aspect_w = 16,
@@ -46,12 +46,12 @@ minetest.register_node("coloredwater:water_source_cyan", {
 
 minetest.register_node("coloredwater:water_flowing_cyan", {
 	description = "Cyan Flowing Water",
-	inventory_image = minetest.inventorycube("coloredwater_water_cyan.png"),
+	inventory_image = minetest.inventorycube("coloredwater_water_base.png^[colorize:#01fffccc:50]"),
 	drawtype = "flowingliquid",
-	tiles = {"coloredwater_water_cyan.png"},
+	tiles = {"coloredwater_water_base.png^[colorize:#01fffccc:50]"},
 	special_tiles = {
 		{
-			name = "coloredwater_water_flowing_animated_cyan.png",
+			name = "coloredwater_water_flowing_animated_base.png^[colorize:#01fffccc:50]",
 			backface_culling = false,
 			animation = {
 				type = "vertical_frames",
@@ -61,7 +61,7 @@ minetest.register_node("coloredwater:water_flowing_cyan", {
 			},
 		},
 		{
-			name = "coloredwater_water_flowing_animated_cyan.png",
+			name = "coloredwater_water_flowing_animated_base.png^[colorize:#01fffccc:50]",
 			backface_culling = true,
 			animation = {
 				type = "vertical_frames",
@@ -94,14 +94,14 @@ bucket.register_liquid(
 	"coloredwater:water_source_cyan",
 	"coloredwater:water_flowing_cyan",
 	"coloredwater:bucket_water_cyan",
-	"coloredwater_bucket_cyan.png",
+	"coloredwater_bucket_base.png^[colorize:#01fffccc:50]^coloredwater_bucket_overlay_base.png",
 	"Cyan Water Bucket"
 )
 
 -- ice
 minetest.register_node("coloredwater:ice_cyan", {
 	description = "Cyan Ice",
-	tiles = {"coloredwater_ice_cyan.png"},
+	tiles = {"coloredwater_ice_base.png^[colorize:#01fffccc:50]"},
 	is_ground_content = false,
 	paramtype = "light",
 	groups = {cracky=3},
@@ -111,9 +111,9 @@ minetest.register_node("coloredwater:ice_cyan", {
 -- snow
 minetest.register_node("coloredwater:snow_cyan", {
 	description = "Cyan Snow",
-	tiles = {"coloredwater_snow_cyan.png"},
-	inventory_image = "coloredwater_snowball_cyan.png",
-	wield_image = "coloredwater_snowball_cyan.png",
+	tiles = {"coloredwater_snow_base.png^[colorize:#01fffccc:50]"},
+	inventory_image = "coloredwater_snowball_base.png^[colorize:#01fffccc:50]",
+	wield_image = "coloredwater_snowball_base.png^[colorize:#01fffccc:50]",
 	is_ground_content = true,
 	paramtype = "light",
 	buildable_to = true,
@@ -141,7 +141,7 @@ minetest.register_node("coloredwater:snow_cyan", {
 
 minetest.register_node("coloredwater:snowblock_cyan", {
 	description = "Cyan Snow Block",
-	tiles = {"coloredwater_snow_cyan.png"},
+	tiles = {"coloredwater_snow_base.png^[colorize:#01fffccc:50]"},
 	is_ground_content = true,
 	groups = {crumbly=3},
 	sounds = default.node_sound_dirt_defaults({
@@ -173,3 +173,11 @@ minetest.register_alias("snow_cyan", "coloredwater:snow_cyan")
 minetest.register_alias("snowblock_cyan", "coloredwater:snowblock_cyan")
 minetest.register_alias("bucket_water_cyan", "coloredwater:bucket_water_cyan")
 minetest.register_alias("ice_cyan", "coloredwater:ice_cyan")
+
+-- make colored water crafting
+minetest.register_craft({
+ type = "shapeless",
+ output = "coloredwater:bucket_water_cyan,",
+recipe = {"bucket:bucket_water","dye:cyan"}
+})
+

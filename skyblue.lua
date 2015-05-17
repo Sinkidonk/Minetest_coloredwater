@@ -1,11 +1,11 @@
 -- water
 minetest.register_node("coloredwater:water_source_skyblue", {
 	description = "Skyblue Water Source",
-	inventory_image = minetest.inventorycube("coloredwater_water_skyblue.png"),
+	inventory_image = minetest.inventorycube("coloredwater_water_base.png^[colorize:#017fffcc:50]"),
 	drawtype = "liquid",
 	tiles = {
 		{
-			name = "coloredwater_water_source_animated_skyblue.png",
+			name = "coloredwater_water_source_animated_base.png^[colorize:#017fffcc:50]",
 			animation = {
 				type = "vertical_frames",
 				aspect_w = 16,
@@ -17,7 +17,7 @@ minetest.register_node("coloredwater:water_source_skyblue", {
 	special_tiles = {
 		-- New-style water source material (mostly unused)
 		{
-			name = "coloredwater_water_source_animated_skyblue.png",
+			name = "coloredwater_water_source_animated_base.png^[colorize:#017fffcc:50]",
 			animation = {
 				type = "vertical_frames",
 				aspect_w = 16,
@@ -46,12 +46,12 @@ minetest.register_node("coloredwater:water_source_skyblue", {
 
 minetest.register_node("coloredwater:water_flowing_skyblue", {
 	description = "Skyblue Flowing Water",
-	inventory_image = minetest.inventorycube("coloredwater_water_skyblue.png"),
+	inventory_image = minetest.inventorycube("coloredwater_water_base.png^[colorize:#017fffcc:50]"),
 	drawtype = "flowingliquid",
-	tiles = {"coloredwater_water_skyblue.png"},
+	tiles = {"coloredwater_water_base.png^[colorize:#017fffcc:50]"},
 	special_tiles = {
 		{
-			name = "coloredwater_water_flowing_animated_skyblue.png",
+			name = "coloredwater_water_flowing_animated_base.png^[colorize:#017fffcc:50]",
 			backface_culling = false,
 			animation = {
 				type = "vertical_frames",
@@ -61,7 +61,7 @@ minetest.register_node("coloredwater:water_flowing_skyblue", {
 			},
 		},
 		{
-			name = "coloredwater_water_flowing_animated_skyblue.png",
+			name = "coloredwater_water_flowing_animated_base.png^[colorize:#017fffcc:50]",
 			backface_culling = true,
 			animation = {
 				type = "vertical_frames",
@@ -94,14 +94,14 @@ bucket.register_liquid(
 	"coloredwater:water_source_skyblue",
 	"coloredwater:water_flowing_skyblue",
 	"coloredwater:bucket_water_skyblue",
-	"coloredwater_bucket_skyblue.png",
+	"coloredwater_bucket_base.png^[colorize:#017fffcc:50]^coloredwater_bucket_overlay_base.png",
 	"Skyblue Water Bucket"
 )
 
 -- ice
 minetest.register_node("coloredwater:ice_skyblue", {
 	description = "Skyblue Ice",
-	tiles = {"coloredwater_ice_skyblue.png"},
+	tiles = {"coloredwater_ice_base.png^[colorize:#017fffcc:50]"},
 	is_ground_content = false,
 	paramtype = "light",
 	groups = {cracky=3},
@@ -111,9 +111,9 @@ minetest.register_node("coloredwater:ice_skyblue", {
 -- snow
 minetest.register_node("coloredwater:snow_skyblue", {
 	description = "Skyblue Snow",
-	tiles = {"coloredwater_snow_skyblue.png"},
-	inventory_image = "coloredwater_snowball_skyblue.png",
-	wield_image = "coloredwater_snowball_skyblue.png",
+	tiles = {"coloredwater_snow_base.png^[colorize:#017fffcc:50]"},
+	inventory_image = "coloredwater_snowball_base.png^[colorize:#017fffcc:50]",
+	wield_image = "coloredwater_snowball_base.png^[colorize:#017fffcc:50]",
 	is_ground_content = true,
 	paramtype = "light",
 	buildable_to = true,
@@ -141,7 +141,7 @@ minetest.register_node("coloredwater:snow_skyblue", {
 
 minetest.register_node("coloredwater:snowblock_skyblue", {
 	description = "Skyblue Snow Block",
-	tiles = {"coloredwater_snow_skyblue.png"},
+	tiles = {"coloredwater_snow_base.png^[colorize:#017fffcc:50]"},
 	is_ground_content = true,
 	groups = {crumbly=3},
 	sounds = default.node_sound_dirt_defaults({
@@ -173,3 +173,11 @@ minetest.register_alias("snow_skyblue", "coloredwater:snow_skyblue")
 minetest.register_alias("snowblock_skyblue", "coloredwater:snowblock_skyblue")
 minetest.register_alias("bucket_water_skyblue", "coloredwater:bucket_water_skyblue")
 minetest.register_alias("ice_skyblue", "coloredwater:ice_skyblue")
+
+-- make colored water crafting
+minetest.register_craft({
+ type = "shapeless",
+ output = "coloredwater:bucket_water_skyblue,",
+recipe = {"bucket:bucket_water","dye:skyblue"}
+})
+

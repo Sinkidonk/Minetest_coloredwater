@@ -1,11 +1,11 @@
 -- water
 minetest.register_node("coloredwater:water_source_lime", {
 	description = "Lime Water Source",
-	inventory_image = minetest.inventorycube("coloredwater_water_lime.png"),
+	inventory_image = minetest.inventorycube("coloredwater_water_base.png^[colorize:#84ff01cc:50]"),
 	drawtype = "liquid",
 	tiles = {
 		{
-			name = "coloredwater_water_source_animated_lime.png",
+			name = "coloredwater_water_source_animated_base.png^[colorize:#84ff01cc:50]",
 			animation = {
 				type = "vertical_frames",
 				aspect_w = 16,
@@ -17,7 +17,7 @@ minetest.register_node("coloredwater:water_source_lime", {
 	special_tiles = {
 		-- New-style water source material (mostly unused)
 		{
-			name = "coloredwater_water_source_animated_lime.png",
+			name = "coloredwater_water_source_animated_base.png^[colorize:#84ff01cc:50]",
 			animation = {
 				type = "vertical_frames",
 				aspect_w = 16,
@@ -46,12 +46,12 @@ minetest.register_node("coloredwater:water_source_lime", {
 
 minetest.register_node("coloredwater:water_flowing_lime", {
 	description = "Lime Flowing Water",
-	inventory_image = minetest.inventorycube("coloredwater_water_lime.png"),
+	inventory_image = minetest.inventorycube("coloredwater_water_base.png^[colorize:#84ff01cc:50]"),
 	drawtype = "flowingliquid",
-	tiles = {"coloredwater_water_lime.png"},
+	tiles = {"coloredwater_water_base.png^[colorize:#84ff01cc:50]"},
 	special_tiles = {
 		{
-			name = "coloredwater_water_flowing_animated_lime.png",
+			name = "coloredwater_water_flowing_animated_base.png^[colorize:#84ff01cc:50]",
 			backface_culling = false,
 			animation = {
 				type = "vertical_frames",
@@ -61,7 +61,7 @@ minetest.register_node("coloredwater:water_flowing_lime", {
 			},
 		},
 		{
-			name = "coloredwater_water_flowing_animated_lime.png",
+			name = "coloredwater_water_flowing_animated_base.png^[colorize:#84ff01cc:50]",
 			backface_culling = true,
 			animation = {
 				type = "vertical_frames",
@@ -94,14 +94,14 @@ bucket.register_liquid(
 	"coloredwater:water_source_lime",
 	"coloredwater:water_flowing_lime",
 	"coloredwater:bucket_water_lime",
-	"coloredwater_bucket_lime.png",
+	"coloredwater_bucket_base.png^[colorize:#84ff01cc:50]^coloredwater_bucket_overlay_base.png",
 	"Lime Water Bucket"
 )
 
 -- ice
 minetest.register_node("coloredwater:ice_lime", {
 	description = "Lime Ice",
-	tiles = {"coloredwater_ice_lime.png"},
+	tiles = {"coloredwater_ice_base.png^[colorize:#84ff01cc:50]"},
 	is_ground_content = false,
 	paramtype = "light",
 	groups = {cracky=3},
@@ -111,9 +111,9 @@ minetest.register_node("coloredwater:ice_lime", {
 -- snow
 minetest.register_node("coloredwater:snow_lime", {
 	description = "Lime Snow",
-	tiles = {"coloredwater_snow_lime.png"},
-	inventory_image = "coloredwater_snowball_lime.png",
-	wield_image = "coloredwater_snowball_lime.png",
+	tiles = {"coloredwater_snow_base.png^[colorize:#84ff01cc:50]"},
+	inventory_image = "coloredwater_snowball_base.png^[colorize:#84ff01cc:50]",
+	wield_image = "coloredwater_snowball_base.png^[colorize:#84ff01cc:50]",
 	is_ground_content = true,
 	paramtype = "light",
 	buildable_to = true,
@@ -141,7 +141,7 @@ minetest.register_node("coloredwater:snow_lime", {
 
 minetest.register_node("coloredwater:snowblock_lime", {
 	description = "Lime Snow Block",
-	tiles = {"coloredwater_snow_lime.png"},
+	tiles = {"coloredwater_snow_base.png^[colorize:#84ff01cc:50]"},
 	is_ground_content = true,
 	groups = {crumbly=3},
 	sounds = default.node_sound_dirt_defaults({
@@ -173,3 +173,11 @@ minetest.register_alias("snow_lime", "coloredwater:snow_lime")
 minetest.register_alias("snowblock_lime", "coloredwater:snowblock_lime")
 minetest.register_alias("bucket_water_lime", "coloredwater:bucket_water_lime")
 minetest.register_alias("ice_lime", "coloredwater:ice_lime")
+
+-- make colored water crafting
+minetest.register_craft({
+ type = "shapeless",
+ output = "coloredwater:bucket_water_lime,",
+recipe = {"bucket:bucket_water","dye:lime"}
+})
+
