@@ -1,11 +1,11 @@
 -- water
 minetest.register_node("coloredwater:water_source_cyan", {
 	description = "Cyan Water Source",
-	inventory_image = minetest.inventorycube("coloredwater_water_base.png^[colorize:#01fffccc:50]"),
+	inventory_image = minetest.inventorycube("coloredwater_water_base.png^[colorize:#01fffcb3:70]"),
 	drawtype = "liquid",
 	tiles = {
 		{
-			name = "coloredwater_water_source_animated_base.png^[colorize:#01fffccc:50]",
+			name = "coloredwater_water_source_animated_base.png^[colorize:#01fffcb3:70]",
 			animation = {
 				type = "vertical_frames",
 				aspect_w = 16,
@@ -17,7 +17,7 @@ minetest.register_node("coloredwater:water_source_cyan", {
 	special_tiles = {
 		-- New-style water source material (mostly unused)
 		{
-			name = "coloredwater_water_source_animated_base.png^[colorize:#01fffccc:50]",
+			name = "coloredwater_water_source_animated_base.png^[colorize:#01fffcb3:70]",
 			animation = {
 				type = "vertical_frames",
 				aspect_w = 16,
@@ -46,12 +46,12 @@ minetest.register_node("coloredwater:water_source_cyan", {
 
 minetest.register_node("coloredwater:water_flowing_cyan", {
 	description = "Cyan Flowing Water",
-	inventory_image = minetest.inventorycube("coloredwater_water_base.png^[colorize:#01fffccc:50]"),
+	inventory_image = minetest.inventorycube("coloredwater_water_base.png^[colorize:#01fffcb3:70]"),
 	drawtype = "flowingliquid",
-	tiles = {"coloredwater_water_base.png^[colorize:#01fffccc:50]"},
+	tiles = {"coloredwater_water_base.png^[colorize:#01fffcb3:70]"},
 	special_tiles = {
 		{
-			name = "coloredwater_water_flowing_animated_base.png^[colorize:#01fffccc:50]",
+			name = "coloredwater_water_flowing_animated_base.png^[colorize:#01fffcb3:70]",
 			backface_culling = false,
 			animation = {
 				type = "vertical_frames",
@@ -61,7 +61,7 @@ minetest.register_node("coloredwater:water_flowing_cyan", {
 			},
 		},
 		{
-			name = "coloredwater_water_flowing_animated_base.png^[colorize:#01fffccc:50]",
+			name = "coloredwater_water_flowing_animated_base.png^[colorize:#01fffcb3:70]",
 			backface_culling = true,
 			animation = {
 				type = "vertical_frames",
@@ -94,14 +94,14 @@ bucket.register_liquid(
 	"coloredwater:water_source_cyan",
 	"coloredwater:water_flowing_cyan",
 	"coloredwater:bucket_water_cyan",
-	"coloredwater_bucket_base.png^[colorize:#01fffccc:50]^coloredwater_bucket_overlay_base.png",
+	"coloredwater_bucket_base.png^[colorize:#01fffcb3:70]^coloredwater_bucket_overlay_base.png",
 	"Cyan Water Bucket"
 )
 
 -- ice
 minetest.register_node("coloredwater:ice_cyan", {
 	description = "Cyan Ice",
-	tiles = {"coloredwater_ice_base.png^[colorize:#01fffccc:50]"},
+	tiles = {"coloredwater_ice_base.png^[colorize:#01fffcb3:70]"},
 	is_ground_content = false,
 	paramtype = "light",
 	groups = {cracky=3},
@@ -111,9 +111,9 @@ minetest.register_node("coloredwater:ice_cyan", {
 -- snow
 minetest.register_node("coloredwater:snow_cyan", {
 	description = "Cyan Snow",
-	tiles = {"coloredwater_snow_base.png^[colorize:#01fffccc:50]"},
-	inventory_image = "coloredwater_snowball_base.png^[colorize:#01fffccc:50]",
-	wield_image = "coloredwater_snowball_base.png^[colorize:#01fffccc:50]",
+	tiles = {"coloredwater_snow_base.png^[colorize:#01fffcb3:70]"},
+	inventory_image = "coloredwater_snowball_base.png^[colorize:#01fffcb3:70]",
+	wield_image = "coloredwater_snowball_base.png^[colorize:#01fffcb3:70]",
 	is_ground_content = true,
 	paramtype = "light",
 	buildable_to = true,
@@ -141,7 +141,7 @@ minetest.register_node("coloredwater:snow_cyan", {
 
 minetest.register_node("coloredwater:snowblock_cyan", {
 	description = "Cyan Snow Block",
-	tiles = {"coloredwater_snow_base.png^[colorize:#01fffccc:50]"},
+	tiles = {"coloredwater_snow_base.png^[colorize:#01fffcb3:70]"},
 	is_ground_content = true,
 	groups = {crumbly=3},
 	sounds = default.node_sound_dirt_defaults({
