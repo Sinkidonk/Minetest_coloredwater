@@ -10,7 +10,7 @@ TO DO <br>
 1. Done - add the WTFPL – Do What the Fuck You Want to Public License. <br>
 2. Done - remove over 600+ textures, and start useing the Texture modifiers (Thank Hybrid Dog for pointing that out.) <br>
 2. Done for now - add more color. <br>
-4. make colored water biome.
+4. make colored water biome.<br>
 3. ??? <br>
 4. profit 
 
