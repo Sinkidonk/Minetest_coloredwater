@@ -13,7 +13,7 @@ TO DO <br>
 4. ??? <br>
 5. profit <br> <br> 
 
-Thing I may do
+Thing I may do <br>
 1. Major rewrite of the code only if I can get post_effect_color to work with loop. This is mainly for I can edit part of the code more easily without hunting for it.
 
 
