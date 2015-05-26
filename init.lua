@@ -5,8 +5,8 @@
 
 
 
-dofile(minetest.get_modpath("coloredwater").."/green.lua")
-dofile(minetest.get_modpath("coloredwater").."/blue.lua")
+--dofile(minetest.get_modpath("coloredwater").."/green.lua")
+--dofile(minetest.get_modpath("coloredwater").."/blue.lua")
 dofile(minetest.get_modpath("coloredwater").."/red.lua")
 dofile(minetest.get_modpath("coloredwater").."/orange.lua")
 dofile(minetest.get_modpath("coloredwater").."/aqua.lua")
@@ -15,3 +15,5 @@ dofile(minetest.get_modpath("coloredwater").."/lime.lua")
 dofile(minetest.get_modpath("coloredwater").."/magenta.lua")
 dofile(minetest.get_modpath("coloredwater").."/redviolet.lua")
 dofile(minetest.get_modpath("coloredwater").."/skyblue.lua")
+
+dofile(minetest.get_modpath("coloredwater").."/looptest.lua")
