@@ -11,7 +11,11 @@ TO DO <br>
 2. Done - remove over 600+ textures, and start useing the Texture modifiers (Thank Hybrid Dog for pointing that out.) <br>
 3. Done for now - add more color. <br>
 4. ??? <br>
-5. profit 
+5. profit <br> <br> 
+
+Thing I may do
+1. Major rewrite of the code only if I can get post_effect_color to work with loop. This is mainly for I can edit part of the code more easily without hunting for it.
+
 
 <h3>Thing to add in the near future</h3>
 1. colored water biome ( was going to add it sooner but found out that Mapgen v6 don't allow new biome, only redefind existence biome in the world. So I will wait until Mapgen v7 is finish, to add in biome. Unless someone else what to add it in before then I will be more then willing to add it to the main mod.
