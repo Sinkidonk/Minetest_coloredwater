@@ -17,7 +17,8 @@ Thing I may do <br>
 1. Major rewrite of the code only if I can get post_effect_color to work with loop. This is mainly for I can edit part of the code more easily without hunting for it.
 
 <h3>Thing to add in the near future</h3>
-1. colored water biome ( was going to add it sooner but found out that Mapgen v6 don't allow new biome, only redefind existence biome in the world. So I will wait until Mapgen v7 is finish, to add in biome. Unless someone else what to add it in before then I will be more then willing to add it to the main mod.
+1. colored water biome ( was going to add it sooner but found out that Mapgen v6 don't allow new biome, only redefind existence biome in the world. So I will wait until Mapgen v7 is finish, to add in biome. Unless someone else what to add it in before then I will be more then willing to add it to the main mod.<br>
+<b>Update: </b> I have decide to start working on colored water biome for Mapgen v7 when I get done with the major rewrite of the code, if I can get that post_effect_color to work with loop that is. If not I will start as soon as I abandon the major rewrite of the code.
 
 
 <br>
