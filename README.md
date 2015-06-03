@@ -1,5 +1,7 @@
 # Minetest_coloredwater <br>
 
+<h1>I am leaving this hear as it is if anyone what try and get this to work, for the most part I am done trying to get post_effect_color to work with loop I will still try hear and there to get it to work I will not make it one of the main thing to do anymore.</h1>
+
 Also forgive any mistake I may make I am somewhat new at lua codeing, and github well I a total noob when it come to github so that that. So I am sorry if I don't upload the files the right way, I will try my best. <br>
 
 Please note that the colors.txt file, and the gentextures.sh file are not my they are both by VanessaE.<br> <br>
