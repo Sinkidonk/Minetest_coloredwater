@@ -1,6 +1,6 @@
 -- Project name: coloredwater
 -- Project purpose: I like the idea of haveing color water in minetest and now we can do just that.
--- Created/revised by: Sinkidonk on 5/13/15 last revised on 6/3/15, revised by Sinkidonk
+-- Created/revised by: Sinkidonk on 5/13/15 last revised on 6/12/15, revised by Sinkidonk
 
 
 
